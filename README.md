@@ -17,3 +17,7 @@ It is a **Pokémon-themed VR exercise game** inspired by Beat Saber. Players use
 
 6. **Custom assets:** Both the **Pokéballs** and **Pokéflutes** were modeled in **Blender**.  
 
+## Video
+<video src="Demonstrations/Demo3.mov" controls width="600"></video>
+
+
