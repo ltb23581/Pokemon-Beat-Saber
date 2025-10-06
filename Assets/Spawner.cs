@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject[] pokeballs;    // assign your Pokéball prefabs here
-    public Transform[] points;        // assign the spawn points here
-    public AudioSource music;         // drag your AudioSource here
-    public float bpm = 130f;          // beats per minute of your song
-    public float startDelay = 5f;     // seconds before the song & spawning start
+    public GameObject[] pokeballs;    
+    public Transform[] points;        
+    public AudioSource music;         
+    public float bpm = 130f;          
+    public float startDelay = 5f;     
 
     private float secondsPerBeat;
     private float nextBeatTime;
@@ -16,8 +16,8 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        secondsPerBeat = 60f / bpm;   // length of one beat
-        nextBeatTime = startDelay;    // first beat will spawn after delay
+        secondsPerBeat = 60f / bpm;   
+        nextBeatTime = startDelay;    
         Invoke(nameof(StartMusic), startDelay);
     }
 
@@ -32,7 +32,6 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        // Spawn ball each time we reach the next beat
         if (musicStarted && music != null && music.isPlaying && music.time + startDelay >= nextBeatTime)
         {
             SpawnBall();

@@ -9,7 +9,6 @@ public class SimpleHandTracking : MonoBehaviour
 
     void OnEnable()
     {
-        // Safely enable actions
         if (positionAction != null && positionAction.action != null)
             positionAction.action.Enable();
 
@@ -19,7 +18,6 @@ public class SimpleHandTracking : MonoBehaviour
 
     void OnDisable()
     {
-        // Disable when object is turned off/destroyed
         if (positionAction != null && positionAction.action != null)
             positionAction.action.Disable();
 

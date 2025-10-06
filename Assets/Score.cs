@@ -4,7 +4,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
     public int score = 0;
-    public ScoreBar scoreBar;   // drag the ScoreBar object here
+    public ScoreBar scoreBar;   
 
     void Awake()
     {

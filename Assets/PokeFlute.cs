@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PokeFlute : MonoBehaviour
 {
-    public LayerMask layer;    // Which layers can be hit
+    public LayerMask layer;    
     private Vector3 previousPos;
 
     void Start()
@@ -15,10 +15,8 @@ public class PokeFlute : MonoBehaviour
         RaycastHit hit;
         Debug.DrawRay(transform.position, transform.forward * 5f, Color.red);
 
-        // Cast a ray forward from the flute
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5f, layer.value))
         {
-            // Check if the swing angle is large enough
             Vector3 swingDir = transform.position - previousPos;
             if (swingDir.magnitude > 0.05f && Vector3.Angle(swingDir, transform.forward) < 80f)
             {
