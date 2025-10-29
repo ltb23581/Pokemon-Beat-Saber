@@ -15,10 +15,14 @@ It is a **Pokémon-themed VR exercise game** inspired by Beat Saber. Players use
 
 5. A **ding** plays when a hit is successful, and the **green progress bar** advances. **Incorrect hits** play an **error sound** and do **not** progress the bar.  
 
-6. **Custom assets:** Both the **Pokéballs** and **Pokéflutes** were modeled in **Blender**.  
+6. **Custom assets:** Both the **Pokéballs** and **Pokéflutes** were modeled in **Blender**.
+
+## Limitations
+1. Although the Poké Balls spawn based on the number of beats in the song, they do not render in time close enough for the player to hit them on beat. 
 
 ## Video
 ▶ [Demo Preview](https://drive.google.com/file/d/1qvdqvco2ejqJLi7ALyUJfkM9_eYzA-OW/preview)  
+
 
 
 
